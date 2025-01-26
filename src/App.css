@@ -1,0 +1,370 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  /* box-shadow: 0px 0px 15px black; */
+  background-color: #1e8bf1;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #7a7a7a2c;
+  border-radius: 8px;
+}
+
+
+.gradient-border {
+  border: 5px solid;
+  /* Set the border width */
+  border-image: linear-gradient(45deg, red, blue) 1;
+}
+
+
+.gradient-border {
+  padding: 20px;
+  background-color: rgb(198, 194, 194);
+  display: inline-block;
+}
+
+
+.input-root .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  outline: none !important;
+  border: solid 2px #2582e5c7;
+  border-radius: 8px;
+  min-height: 45px !important;
+}
+
+.input-root .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border: solid 2px #2583e5;
+}
+
+
+
+/* .input-root .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #024f5c; 
+} */
+
+
+
+
+/* .input-root .MuiOutlinedInput-root {
+  border: none !important; 
+  outline: none !important;
+  border: solid 2px #2582e5c7;
+  border-radius: 8px;
+  min-height: 50px !important;
+  overflow: hidden ;
+  background: #ffffff;
+  color: black;
+}
+
+.input-root .MuiOutlinedInput-root:hover{
+    border: solid 2px #2583e5;
+}
+
+.input-root .MuiOutlinedInput-notchedOutline {
+  border: none !important;
+  outline: none !important;
+}
+
+.input-root:hover .MuiOutlinedInput-notchedOutline {
+  border: none !important;
+  outline: none !important;
+
+} */
+
+
+.input-root .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  padding: 0px !important;
+  padding-left: 10px !important;
+  min-height: 0px !important;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+
+
+
+
+.input-root .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+  padding: 10px !important;
+  padding-left: 10px !important;
+  min-height: 0px !important;
+  border-radius: 0% !important;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+
+
+
+.MuiFormHelperText-root.Mui-error {
+  padding-left: 0px !important;
+  margin-top: 2px !important;
+  margin-left: 2px !important;
+}
+
+
+
+/* .input-root .MuiInputBase-root {
+  border: solid 1px #1578be;
+  box-shadow: 0px 0px 5px #1578bea6;
+  outline: none !important;
+  border-radius: 8px;
+  background: #ffffff00;
+  color: rgb(0, 0, 0);
+  height: 50px;overflow: hidden;
+
+} */
+
+
+.button {
+  margin: 15px auto;
+  font-size: 20px;
+  color: #ffffff !important;
+  background: linear-gradient(35deg, #1e8bf1 1%, #b365b6 100%);
+  cursor: pointer;
+  padding: 15px 20px;
+  border-radius: 8px ;
+  text-transform: none !important;
+  border: 0px solid #000;   
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1),10px -5px 15px rgba(0, 0, 0, 0.158) inset;
+  }
+
+
+.button.pulse-button {
+  animation: borderPulse 1000ms infinite ease-out, colorShift 10000ms infinite ease-in;
+}
+
+
+.button.pulse-button-hover {
+  animation: colorShift 10000ms infinite ease-in;
+}
+
+
+.button:hover,
+.button:focus {
+  animation: borderPulse 1000ms infinite ease-out, colorShift 10000ms infinite ease-in, hoverShine 200ms;
+}
+
+
+@keyframes colorShift {
+  0%, 100% {
+      background: #26a1da;
+  }
+  33% {
+    background: #2b2e98;
+  }
+  66%{
+    background: #f98dff;
+  }
+}
+
+
+/* @keyframes borderPulse {
+  0% {
+    box-shadow: inset 0px 0px 0px 5px rgba(255, 255, 255,.4), 0px 0px 0px 0px rgba(255,255,255,1);
+  }
+  100% {
+    box-shadow: inset 0px 0px 0px 3px rgba(117, 117, 255,.2), 0px 0px 0px 10px rgba(255,255,255,0);
+  }
+} */
+
+
+@keyframes hoverShine {
+  0%{
+    background-image: linear-gradient(135deg, rgba(255,255,255,.4) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+  }
+  50%{
+    background-image: linear-gradient(135deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.4) 50%, rgba(255,255,255,0) 100%);
+  }
+  100%{
+    background-image: linear-gradient(135deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,.4) 100%);
+  }
+}
+
+
+
+#background-wrap {
+    bottom: 0;
+	left: 0;
+	padding-top: 50px;
+	position: relative;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
+
+/* KEYFRAMES */
+
+@-webkit-keyframes animateCloud {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@-moz-keyframes animateCloud {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@keyframes animateCloud {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+/* ANIMATIONS */
+
+.x1 {
+	-webkit-animation: animateCloud 35s linear infinite;
+	-moz-animation: animateCloud 35s linear infinite;
+	animation: animateCloud 35s linear infinite;
+	
+	-webkit-transform: scale(0.65);
+	-moz-transform: scale(0.65);
+	transform: scale(0.65);
+}
+
+.x2 {
+	-webkit-animation: animateCloud 20s linear infinite;
+	-moz-animation: animateCloud 20s linear infinite;
+	animation: animateCloud 20s linear infinite;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.x3 {
+	-webkit-animation: animateCloud 30s linear infinite;
+	-moz-animation: animateCloud 30s linear infinite;
+	animation: animateCloud 30s linear infinite;
+	
+	-webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+.x4 {
+	-webkit-animation: animateCloud 18s linear infinite;
+	-moz-animation: animateCloud 18s linear infinite;
+	animation: animateCloud 18s linear infinite;
+	
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.x5 {
+	-webkit-animation: animateCloud 25s linear infinite;
+	-moz-animation: animateCloud 25s linear infinite;
+	animation: animateCloud 25s linear infinite;
+	
+	-webkit-transform: scale(0.55);
+	-moz-transform: scale(0.55);
+	transform: scale(0.55);
+}
+
+/* OBJECTS */
+
+.cloud {
+	background: #fff;
+	background: -moz-linear-gradient(top,  #fff 5%, #f1f1f1 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#fff), color-stop(100%,#f1f1f1));
+	background: -webkit-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+	background: -o-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+	background: -ms-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+	background: linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f1f1f1',GradientType=0 );
+	
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	
+	-webkit-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+
+	height: 50px;
+	position: relative;
+	width: 350px;
+}
+
+.cloud:after, .cloud:before {
+    background: #fff;
+	content: '';
+	position: absolute;
+	z-indeX: -1;
+}
+
+.cloud:after {
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+
+	height: 100px;
+	left: 50px;
+	top: -50px;
+	width: 100px;
+}
+
+.cloud:before {
+	-webkit-border-radius: 200px;
+	-moz-border-radius: 200px;
+	border-radius: 200px;
+
+	width: 180px;
+	height: 180px;
+	right: 50px;
+	top: -90px;
+}
