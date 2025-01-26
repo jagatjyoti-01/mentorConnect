@@ -38,7 +38,7 @@ export const Home = () => {
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <Grid container mt={2} justifyContent="center" style={{
                         background: 'transparent',
-                        maxWidth: '93%'
+                        maxWidth: '94%'
                     }}>
 
 
